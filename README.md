@@ -80,5 +80,3 @@ Aplicación desarrollada para la consultora Factumex, con propósito de obtener 
 - Arreglar los deeplinks para que funcione en Android 12+.
 - Agregar deeplinks para las notificaciones y que así nos envié al mapa de google.
 - Agregaría un broadcaste receiver para escuchar cuando el dispositivo cuando se reinicia y así poder volver a arrancar el servicio de actualización de ubicación.
-
-![image](https://user-images.githubusercontent.com/20269109/203863634-7414836f-7401-4367-9b4a-2a69924cdbc7.png)
