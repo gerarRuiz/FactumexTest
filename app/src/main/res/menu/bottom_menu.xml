@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/webFragment"
+        android:title="@string/menu_profile"
+        android:icon="@drawable/ic_person"/>
+
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/menu_movies"
+        android:icon="@drawable/ic_movies"/>
+
+
+    <item
+        android:id="@+id/locationHistoryFragment"
+        android:title="@string/menu_location"
+        android:icon="@drawable/ic_location"
+        />
+
+    <item
+        android:id="@+id/galleryFragment"
+        android:title="@string/menu_gallery"
+        android:icon="@drawable/ic_gallery"
+        />
+
+
+</menu>

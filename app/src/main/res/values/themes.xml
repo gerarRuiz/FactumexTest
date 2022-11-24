@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.eMovie" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/black</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="TextViewTitles" parent="Widget.AppCompat.TextView">
+
+        <item name="android:layout_marginTop">@dimen/text_title_margin_top</item>
+        <item name="android:layout_marginStart">@dimen/M16DP</item>
+        <item name="android:layout_marginEnd">@dimen/M16DP</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_title</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+
+    </style>
+
+    <style name="TextViewSubTitles" parent="Widget.AppCompat.TextView">
+
+        <item name="android:layout_marginTop">@dimen/text_sub_title_margin_top</item>
+        <item name="android:layout_marginStart">@dimen/margin_start</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_sub_title_size</item>
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="fontFamily">@font/poppins_regular</item>
+
+    </style>
+
+</resources>

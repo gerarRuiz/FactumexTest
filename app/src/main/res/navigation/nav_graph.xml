@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.ruiz.emovie.presentation.fragments.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_locationHistoryFragment"
+            app:destination="@id/locationHistoryFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_galleryFragment"
+            app:destination="@id/galleryFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_webFragment"
+            app:destination="@id/webFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ruiz.emovie.presentation.fragments.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.ruiz.emovie.presentation.fragments.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="movieId"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="typeMovie"
+            app:argType="string"
+            android:defaultValue='""' />
+        <action
+            android:id="@+id/action_detailsFragment_to_videoPlayerFragment"
+            app:destination="@id/videoPlayerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoPlayerFragment"
+        android:name="com.ruiz.emovie.presentation.fragments.video_player.VideoPlayerFragment"
+        android:label="fragment_video_player"
+        tools:layout="@layout/fragment_video_player" >
+        <argument
+            android:name="movieId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/locationHistoryFragment"
+        android:name="com.ruiz.emovie.presentation.fragments.location.LocationHistoryFragment"
+        android:label="fragment_location_history"
+        tools:layout="@layout/fragment_location_history" >
+        <action
+            android:id="@+id/action_locationHistoryFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.ruiz.emovie.presentation.fragments.maps.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <argument
+            android:name="latitude"
+            app:argType="string"
+            android:defaultValue='"0.0"' />
+        <argument
+            android:name="longitude"
+            app:argType="string"
+            android:defaultValue='"0.0"' />
+    </fragment>
+    <fragment
+        android:id="@+id/galleryFragment"
+        android:name="com.ruiz.emovie.presentation.fragments.gallery.GalleryFragment"
+        android:label="fragment_gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <fragment
+        android:id="@+id/webFragment"
+        android:name="com.ruiz.emovie.presentation.fragments.profile.ProfileFragment"
+        android:label="fragment_web"
+        tools:layout="@layout/fragment_profile">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="https://www.themoviedb.org/authenticate/{request_token}/allow" />
+        <argument
+            android:name="request_token"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+</navigation>

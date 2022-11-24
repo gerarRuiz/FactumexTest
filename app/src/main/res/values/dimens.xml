@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="movie_item_width">138dp</dimen>
+    <dimen name="movie_item_height">180dp</dimen>
+    <dimen name="text_sub_title_size">20sp</dimen>
+    <dimen name="text_sub_title_margin_top">30dp</dimen>
+    <dimen name="margin_start">25dp</dimen>
+    <dimen name="margin_top_recycler">20dp</dimen>
+    <dimen name="text_title">35sp</dimen>
+    <dimen name="text_title_margin_top">45dp</dimen>
+    <dimen name="M16DP">16dp</dimen>
+    <dimen name="movie_width_grid">156dp</dimen>
+    <dimen name="movie_height_grid">205dp</dimen>
+</resources>
