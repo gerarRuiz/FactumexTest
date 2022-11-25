@@ -3,7 +3,6 @@
 Aplicación desarrollada para la consultora Factumex, con propósito de obtener una nueva oportunidad laboral.
 
 - ✨Kotlin
-✨Importante, usar dispositivos con Android 11 o inferior para el correcto funcionamiento del deeplink
 
 ## Pantalla SplashScreen
 
@@ -77,6 +76,5 @@ Aplicación desarrollada para la consultora Factumex, con propósito de obtener 
 ## Mejoras
 
 - Sin duda mejoraría la parte de los permisos, quitarlos del activity y dejarlos en mi base fragment.
-- Arreglar los deeplinks para que funcione en Android 12+.
 - Agregar deeplinks para las notificaciones y que así nos envié al mapa de google.
 - Agregaría un broadcaste receiver para escuchar cuando el dispositivo cuando se reinicia y así poder volver a arrancar el servicio de actualización de ubicación.

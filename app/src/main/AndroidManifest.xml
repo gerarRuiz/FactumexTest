@@ -41,6 +41,22 @@
 
             </intent-filter>
 
+            <intent-filter android:autoVerify="true">
+                <data android:host="ruizdev.000webhostapp.com/"
+                    android:scheme="https"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
+            <intent-filter android:autoVerify="true">
+                <data android:host="ruizdev.000webhostapp.com/"
+                    android:scheme="http"/>
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

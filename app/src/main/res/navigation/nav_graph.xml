@@ -93,12 +93,18 @@
         android:label="fragment_web"
         tools:layout="@layout/fragment_profile">
         <deepLink
+            android:autoVerify="true"
             android:id="@+id/deepLink"
-            app:uri="https://www.themoviedb.org/authenticate/{request_token}/allow" />
+            app:uri="https://ruizdev.000webhostapp.com/?request_token={request_token}&amp;approved={approved}"
+            tools:targetApi="m" />
         <argument
             android:name="request_token"
             app:argType="string"
             app:nullable="true"
             android:defaultValue="@null" />
+        <argument
+            android:name="approved"
+            app:argType="boolean"
+            android:defaultValue="false"/>
     </fragment>
 </navigation>

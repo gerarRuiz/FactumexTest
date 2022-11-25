@@ -212,7 +212,7 @@ class ProfileFragment : BaseFragment<FragmentProfileBinding>(FragmentProfileBind
                     viewModel.saveRequestToken(state.data.request_token ?: "")
                     viewModel.saveExpireAt(state.data.expires_at ?: "")
 
-                    gotoUrl("${Constants.BASE_URL_AUTHENTICATE}${state.data.request_token}")
+                    gotoUrl("${Constants.BASE_URL_AUTHENTICATE}${state.data.request_token}?redirect_to=https://ruizdev.000webhostapp.com/")
 
                 }
 
